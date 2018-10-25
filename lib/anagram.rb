@@ -8,9 +8,8 @@ class Anagram
   end
   
   def match(word_arr)
-    c = word_arr.zip
     word_arr.select do |w|
-      w.split.sort == word.split("").sort
+      w.to_a.sort == word.split("").sort
       binding.pry
     end
     
